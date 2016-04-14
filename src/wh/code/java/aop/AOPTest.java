@@ -1,7 +1,9 @@
 package wh.code.java.aop;
 
 import java.util.logging.Logger;
-
+/*
+ * AOP ≤‚ ‘¿‡
+ */
 public class AOPTest {
 	public static Logger logger = Logger.getLogger(AOPTest.class.getSimpleName());
 
