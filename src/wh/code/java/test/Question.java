@@ -140,14 +140,14 @@ public class Question {
 
 	}
 
-	// µİ¹é ×Ö·û´®·´×ª
+	// é€’å½’ å­—ç¬¦ä¸²åè½¬
 	public static String stringReverse(String s) {
 		if (s.length() > 0)
 			return s.charAt(s.length() - 1) + stringReverse(s.substring(0, s.length() - 1));
 		return "";
 	}
 
-	// Ñ­»· ×Ö·û´®·´×ª
+	// å¾ªç¯ å­—ç¬¦ä¸²åè½¬
 	public static String stringReverse1(String s) {
 		char[] cArr = s.toCharArray();
 		String s1 = "";
@@ -157,7 +157,7 @@ public class Question {
 		return s1;
 	}
 
-	// »ØÎÄ×Ö·û´®
+	// å›æ–‡å­—ç¬¦ä¸²
 	public static boolean isCycleString(char[] s, int start, int end) {
 		if (s == null || start < 0 || end < 0)
 			return false;

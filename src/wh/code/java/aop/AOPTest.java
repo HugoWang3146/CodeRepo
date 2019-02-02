@@ -2,7 +2,7 @@ package wh.code.java.aop;
 
 import java.util.logging.Logger;
 /*
- * AOP ²âÊÔÀà
+ * AOP æµ‹è¯•ç±»
  */
 public class AOPTest {
 	public static Logger logger = Logger.getLogger(AOPTest.class.getSimpleName());

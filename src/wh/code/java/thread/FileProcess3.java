@@ -40,7 +40,7 @@ public class FileProcess3 {
 
 	public static void main(String[] args) {
 		String filePath1 = "C:/Users/hanwa_000/Desktop/Tunnelier-Inst";
-		String filePath2="E:/Ñ¸À×ÏÂÔØ";
+		String filePath2="E:/è¿…é›·ä¸‹è½½";
 		FileProcess3 fp = new FileProcess3(2);
 //		fp.setFilePaths(filePath1);
 		fp.startProcess();

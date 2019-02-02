@@ -1,5 +1,5 @@
 package wh.code.java.singletonpattern;
-//µ¥Àı ·ÇÏß³Ì°²È«
+//å•ä¾‹ éçº¿ç¨‹å®‰å…¨
 public class Singleton01 {
 	private static Singleton01 uniqueInstance = null;
 

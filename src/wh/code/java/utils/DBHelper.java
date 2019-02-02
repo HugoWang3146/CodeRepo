@@ -31,11 +31,11 @@ public class DBHelper {
 		String databaseUser = null;
 		String databasePassword = null;
 		try {
-			InputStream fis = this.getClass().getResourceAsStream("/db.properties"); // ¼ÓÔØÊı¾İ¿âÅäÖÃÎÄ¼şµ½ÄÚ´æÖĞ
+			InputStream fis = this.getClass().getResourceAsStream("/db.properties"); // åŠ è½½æ•°æ®åº“é…ç½®æ–‡ä»¶åˆ°å†…å­˜ä¸­
 			Properties p = new Properties();
 			p.load(fis);
 
-			driverClass = p.getProperty("driverClass"); // »ñÈ¡Êı¾İ¿âÅäÖÃÎÄ¼ş
+			driverClass = p.getProperty("driverClass"); // è·å–æ•°æ®åº“é…ç½®æ–‡ä»¶
 			driverUrl = p.getProperty("driverUrl");
 			databaseUser = p.getProperty("databaseUser");
 			databasePassword = p.getProperty("databasePassword");

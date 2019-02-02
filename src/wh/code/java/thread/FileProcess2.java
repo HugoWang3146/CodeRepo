@@ -35,7 +35,7 @@ public class FileProcess2 {
 
 	public static void main(String[] args) {
 		String filePath1 = "C:/Users/hanwa_000/Desktop/Tunnelier-Inst";
-		String filePath2="E:/Ñ¸À×ÏÂÔØ";
+		String filePath2="E:/è¿…é›·ä¸‹è½½";
 		FileProcess2 fp = new FileProcess2(5);
 		fp.setFilePaths(filePath2);
 		fp.startProcess();

@@ -16,7 +16,7 @@ public class CharacterRecognition {
 	 * The element (i,j) can divide matrices to two parts according the value of the element(0 or 1).
 	 * What we want to do is find a set of element which can divide each matrix from another matrix.
 	 * K matrices ->combination=(K-1)*K/2.
-	 * Using binary array to represent if a set of element can distinguish the two of matrices£¬using dp with memory to find the minimum answer.
+	 * Using binary array to represent if a set of element can distinguish the two of matricesï¼Œusing dp with memory to find the minimum answer.
 	 */
 	public static int N = 0;	//matrix row number
 	public static int M = 0;	//matrix column number

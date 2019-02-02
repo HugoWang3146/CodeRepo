@@ -1,5 +1,5 @@
 package wh.code.java.singletonpattern;
-//单列 线程安全 提前创建实例
+//鍗曞垪 绾跨▼瀹夊叏 鎻愬墠鍒涘缓瀹炰緥
 public class Singleton02 {
 	private static final Singleton02 uniqueInstance = new Singleton02();
 

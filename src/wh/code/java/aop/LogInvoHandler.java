@@ -8,13 +8,13 @@ import java.util.HashMap;
 import java.util.logging.Logger;
 /*
  * 
- * AOP ÃæÏòÇĞÃæ±à³Ì
- * Ê¹ÓÃjdkµÄ¶¯Ì¬°ó¶¨»úÖÆ£¬ÊµÏÖÈÕÖ¾Êä³ö¼°³ÌĞòÔËĞĞÊ±¼äÍ³¼Æ
+ * AOP é¢å‘åˆ‡é¢ç¼–ç¨‹
+ * ä½¿ç”¨jdkçš„åŠ¨æ€ç»‘å®šæœºåˆ¶ï¼Œå®ç°æ—¥å¿—è¾“å‡ºåŠç¨‹åºè¿è¡Œæ—¶é—´ç»Ÿè®¡
  * 
- * ÊµÏÖInvocationHandler½Ó¿Ú£¬Ê¹ÓÃmapÀ´´æ´¢²»Í¬µÄInvocationHandler¶ÔÏó£¬±ÜÃâÉú³É¹ı¶à
+ * å®ç°InvocationHandleræ¥å£ï¼Œä½¿ç”¨mapæ¥å­˜å‚¨ä¸åŒçš„InvocationHandlerå¯¹è±¡ï¼Œé¿å…ç”Ÿæˆè¿‡å¤š
  * 
- * jdkµÄ¶¯Ì¬´úÀíÒªÇóÊµÏÖ½Ó¿Ú£¬ÒÔ±£Ö¤´úÀí¼°±»´úÀíÕßµ÷ÓÃµÄ·½·¨µÄÒ»ÖÂĞÔ¡£¶¯Ì¬´úÀíÔ­ÀíÉÏ²¢²»Ò»¶¨ĞèÒªÊµÏÖ½Ó¿Ú£¬±¾ÖÊÉÏÊÇÀû
- * ÓÃ³¬ÀàÒÔ±£Ö¤µ÷ÓÃµÄÒ»ÖÂĞÔ
+ * jdkçš„åŠ¨æ€ä»£ç†è¦æ±‚å®ç°æ¥å£ï¼Œä»¥ä¿è¯ä»£ç†åŠè¢«ä»£ç†è€…è°ƒç”¨çš„æ–¹æ³•çš„ä¸€è‡´æ€§ã€‚åŠ¨æ€ä»£ç†åŸç†ä¸Šå¹¶ä¸ä¸€å®šéœ€è¦å®ç°æ¥å£ï¼Œæœ¬è´¨ä¸Šæ˜¯åˆ©
+ * ç”¨è¶…ç±»ä»¥ä¿è¯è°ƒç”¨çš„ä¸€è‡´æ€§
  */
 
 
@@ -22,9 +22,9 @@ public class LogInvoHandler implements InvocationHandler {
 
 	private Logger logger = Logger.getLogger(this.getClass().getSimpleName());
 
-	private Object target;	//±»´úÀí¶ÔÏó
-	private Object proxy;	//´úÀí
-	//´æ´¢
+	private Object target;	//è¢«ä»£ç†å¯¹è±¡
+	private Object proxy;	//ä»£ç†
+	//å­˜å‚¨
 	private static HashMap<Class<?>, LogInvoHandler> invoHandlers = new HashMap<Class<?>, LogInvoHandler>();
 
 	private LogInvoHandler() {
@@ -32,7 +32,7 @@ public class LogInvoHandler implements InvocationHandler {
 	}
 	
 	/**
-     * Í¨¹ıClassÀ´Éú³É¶¯Ì¬´úÀí¶ÔÏóProxy
+     * é€šè¿‡Classæ¥ç”ŸæˆåŠ¨æ€ä»£ç†å¯¹è±¡Proxy
      * @param clazz
      * @return
      */

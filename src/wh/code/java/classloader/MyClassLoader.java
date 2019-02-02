@@ -16,14 +16,14 @@ extends ClassLoader
 public Class<?> findClass(String str) throws ClassNotFoundException  
 {  
     JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();  
-    //ÓÃÓÚÕï¶ÏÔ´´úÂë±àÒë´íÎóµÄ¶ÔÏó  
+    //ç”¨äºè¯Šæ–­æºä»£ç ç¼–è¯‘é”™è¯¯çš„å¯¹è±¡  
     DiagnosticCollector diagnostics = new DiagnosticCollector();  
-    //ÄÚ´æÖĞµÄÔ´´úÂë±£´æÔÚÒ»¸ö´ÓJavaFileObject¼Ì³ĞµÄÀàÖĞ   
+    //å†…å­˜ä¸­çš„æºä»£ç ä¿å­˜åœ¨ä¸€ä¸ªä»JavaFileObjectç»§æ‰¿çš„ç±»ä¸­   
     JavaFileObject file = new JavaSourceFromString("Temp", str.toString());  
     Iterable compilationUnits = Arrays.asList(file);  
-    //½¨Á¢Ò»¸ö±àÒëÈÎÎñ  
+    //å»ºç«‹ä¸€ä¸ªç¼–è¯‘ä»»åŠ¡  
     JavaCompiler.CompilationTask task = compiler.getTask(null, null, null, null, null, compilationUnits);  
-    //±àÒëÔ´³ÌĞò  
+    //ç¼–è¯‘æºç¨‹åº  
     boolean result = task.call();  
     if (result)   
     {  

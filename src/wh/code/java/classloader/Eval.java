@@ -14,10 +14,10 @@ public class Eval
         sb.append("        " + str + "return new Object();");  
         sb.append("    }");  
         sb.append("}");  
-        //调用自定义类加载器加载编译在内存中class文件  
+        //璋冪敤鑷畾涔夌被鍔犺浇鍣ㄥ姞杞界紪璇戝湪鍐呭瓨涓璫lass鏂囦欢  
         Class clazz = new MyClassLoader().findClass(sb.toString());  
         Method method = clazz.getMethod("getObject");  
-        //通过反射调用方法  
+        //閫氳繃鍙嶅皠璋冪敤鏂规硶  
         return method.invoke(clazz.newInstance());  
     }  
   
